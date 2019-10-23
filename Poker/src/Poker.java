@@ -4,9 +4,9 @@ public class Poker {
     private static String[][] pokers=new String[4][15];
     private static String[][] newPokers =new String[4][15];
     private static int[][] size = new int[4][15];
-    private static int times;//洗牌次数
+    private int times;//洗牌次数
 
-    private static String[][] poker(){
+    private String[][] poker(){
         String[] nums=new String[14];
         String[] suit=new String[4];
         for (int i = 0; i <14 ; i++) {
@@ -48,7 +48,7 @@ public class Poker {
             System.out.println("");
         }
     }
-    public static void wash() {
+    public void wash() {
         times = (int)((Math.random()*10+1)*(Math.random()*100+1));//进行100-1000次的交换
         String[][] mark = new String[4][15];
         newPokers =poker();
