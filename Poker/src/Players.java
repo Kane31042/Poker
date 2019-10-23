@@ -7,22 +7,14 @@ public class Players {
     private String[] serifuWin=new String[5];
     private String[] serifuLose=new String[5];
 
-    public void test(){
-        MutableStringArray add=new MutableStringArray();
-    }
-
     //设定玩家名字和名台词（不是）
-    public MutableStringArray getNameList(){
-        MutableStringArray nameList1=new MutableStringArray();
+    public String[] getNameList(){
         nameList[0]="DIO";
         nameList[1]="空条JO太郎";
         nameList[2]="卡兹";
         nameList[3]="迪亚波罗波罗哒（不是）";
         nameList[4]="东方JO助";
-        nameList1.add(nameList);
-        nameList1.add("布加拉提");
-        nameList1.test();
-        return nameList1;
+        return nameList;
     }
     public String[] getSerifuWin(){
         serifuWin[0]="这份胜利是属于konoDIO哒！";
